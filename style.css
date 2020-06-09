@@ -1,0 +1,117 @@
+@charset "utf-8";
+*{
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.heading{
+    font-family: 'Anton' ,serif;
+    color: rgb(4, 250, 250);
+    font-size: 20px;
+}
+.overflow{
+    overflow-y: scroll;
+}
+.height{
+    height: 750px ;
+}
+.yellow{
+    background-color: rgb(43, 235, 26);
+}
+.pink{
+    background-color: rgb(223, 14, 212);
+}
+.border-main{
+    border: 2px black groove;
+}
+.chat-input{
+    width: 85%;
+    border: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 50px;
+    border: 1px solid rgba(60 , 51, 176, 0.7);
+    box-shadow: inset 0 25px 25px -15px rgba(60 , 51, 176, 0.15);
+}
+
+.chat-input::placeholder{
+    color: rgba(255,255, 255, 0.8);
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: bold;
+    outline: none;
+}
+
+span.friend.last {
+    border-radius: 2px 15px 15px 15px;
+}
+span.friend {
+    position: relative;
+    min-width: 20%;
+    max-width: 85%;
+    height: auto;
+    display: inline-block;
+    background: #fff;
+    padding: 10px;
+    padding-bottom: 25px;
+    box-shadow: 2px 2px 20px -2px rgba(60 , 51, 176, 0.2);
+    color: rgba(60 , 51, 176, 1);
+}
+span.friend span.time {
+    position: absolute;
+    display: block;
+    right: 0;
+    bottom: 0;
+    margin-top: 5px;
+    margin-right: 10px;
+    font-size: 10px;
+    font-weight: 1000;
+    color: rgba(60 , 51, 176, 0.5);
+}
+
+span.you.first {
+    border-radius: 15px 15px 2px 15px;
+}
+span.you {
+    position: relative;
+    float: right;
+    min-width: 20%;
+    max-width: 85%;
+    height: auto;
+    background: #5850c0;
+    display: inline-block;
+    padding: 10px;
+    padding-bottom: 25px;
+    color: #fff;
+    box-shadow: 2px 2px 20px rgba(60 , 51, 176, 0.2), inset -10px -10px 55px rgba(255, 255, 255, 0.1);
+}
+
+span.you span.time {
+    position: absolute;
+    display: inline-block;
+    right: 0;
+    margin-top: 5px;
+    bottom: 0;
+    margin-right: 10px;
+    font-size: 10px;
+    font-weight: 1000;
+    color: rgba(255,255, 255, 0.5);
+}
+
+span.you span.time p{
+    padding: 0;
+    margin: 0;
+}
+
+span.friend span.time p{
+    padding: 0;
+    margin: 0;
+}
+
+span.you ,span.friend {
+    margin-bottom: 12px;
+}
+
